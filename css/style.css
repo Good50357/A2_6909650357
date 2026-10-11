@@ -86,20 +86,9 @@ dt {
 }
 
 /* ---------- Game ranking cards ---------- */
-.game-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-  margin-top: 15px;
-}
-
 .game-card {
-  border: 1px solid #f1d6d9;
-  border-radius: 10px;
-  padding: 16px;
-  text-align: center;
   background-color: #fffaf9;
+  border-color: #f1d6d9;
   transition: transform 0.15s ease-in-out;
 }
 
