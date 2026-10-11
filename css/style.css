@@ -64,21 +64,10 @@ section h3 {
 }
 
 /* ---------- About Me ---------- */
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-.about-content img {
-  width: 110px;
-  height: 110px;
-}
-
-.about-text ul {
-  margin-left: 20px;
-  margin-top: 8px;
+.about-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
 }
 
 /* ---------- What I Built ---------- */
@@ -178,10 +167,4 @@ footer a {
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 500px) {
 
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-}
