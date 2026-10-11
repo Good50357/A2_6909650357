@@ -29,19 +29,16 @@ header p {
 nav {
   background-color: #c73347;
   padding: 12px 0;
-  text-align: center;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 14px;
+.navbar-nav {
+  --bs-nav-link-color: #ffffff;
+  --bs-nav-link-hover-color: #f2c14e;
+}
+
+.nav-link {
   font-weight: bold;
   font-size: 0.95rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 /* ---------- Main layout ---------- */
@@ -192,11 +189,6 @@ footer a {
 @media (max-width: 500px) {
   header h1 {
     font-size: 1.6rem;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 4px 8px;
   }
 
   .about-content {
