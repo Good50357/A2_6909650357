@@ -72,6 +72,12 @@ dt {
   color: #c73347;
 }
 
+.evidence-img {
+  max-width: 400px;
+  border: 1px solid #f1d6d9;
+  border-radius: 6px;
+}
+
 /* ---------- About Me ---------- */
 .about-img {
   width: 140px;
