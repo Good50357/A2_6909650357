@@ -1,0 +1,211 @@
+/* My First Learning Portfolio - style.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Tahoma", "Segoe UI", sans-serif;
+  background-color: #fdf5f4;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #e8455a;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ffe3e6;
+}
+
+nav {
+  background-color: #c73347;
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Main layout ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #f1d6d9;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #c73347;
+  border-bottom: 3px solid #f2c14e;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+}
+
+section h3 {
+  color: #2b2b2b;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+/* ---------- About Me ---------- */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 110px;
+  height: 110px;
+}
+
+.about-text ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* ---------- What I Built ---------- */
+.tech-list {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* ---------- Game ranking cards ---------- */
+.game-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.game-card {
+  border: 1px solid #f1d6d9;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fffaf9;
+  transition: transform 0.15s ease-in-out;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+}
+
+.game-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.game-card .rank {
+  display: inline-block;
+  background-color: #f2c14e;
+  color: #2b2b2b;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.game-card h3 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 1.05rem;
+}
+
+.game-card .revenue {
+  color: #c73347;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.game-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #e8455a;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.game-card a:hover {
+  background-color: #c73347;
+}
+
+/* ---------- Reflection ---------- */
+.reflection-item {
+  margin-bottom: 16px;
+}
+
+.reflection-item h3 {
+  color: #c73347;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #2b2b2b;
+  color: #f1eefb;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #f2c14e;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 4px 8px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

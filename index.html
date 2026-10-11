@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Learning Portfolio - จิรภาส เขียวเจริญ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My First Learning Portfolio</h1>
+    <p>5 เกมคอมพิวเตอร์ที่สร้างรายได้สูงสุดในปี 2025</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#built">What I Built</a>
+    <a href="#how">How I Built It</a>
+    <a href="#games">Top 5 Games</a>
+    <a href="#reflection">Reflection</a>
+  </nav>
+
+  <main>
+
+    <!-- ===================== About Me ===================== -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="media/me.jpg" alt="ไอคอนสตรอเบอรี่ ผลไม้โปรดของฉัน">
+        <div class="about-text">
+          <p><strong>ชื่อ-นามสกุล:</strong> จิรภาส เขียวเจริญ</p>
+          <p><strong>รหัสนักศึกษา:</strong> 6909650357</p>
+          <p><strong>ของโปรดปราน:</strong> สตรอเบอรี่ 🍓</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== What I Built ===================== -->
+    <section id="built">
+      <h2>What I Built</h2>
+      <p>
+        เว็บไซต์นี้เป็นเว็บไซต์แบบหน้าเดียว (single-page) ที่รวบรวมข้อมูลของ
+        <strong>5 เกมคอมพิวเตอร์ที่สร้างรายได้สูงสุดในปี 2025</strong>
+        โดยแสดงอันดับ ไอคอนประจำเกม และรายได้โดยประมาณของแต่ละเกม
+      </p>
+
+      <h3>ส่วนประกอบสำคัญของเว็บไซต์</h3>
+      <ul class="tech-list">
+        <li><code>&lt;header&gt;</code> และ <code>&lt;nav&gt;</code> สำหรับชื่อเว็บไซต์และเมนูเชื่อมไปยังแต่ละหัวข้อ</li>
+        <li><code>&lt;main&gt;</code> และ <code>&lt;section&gt;</code> แบ่งเนื้อหาออกเป็นหมวดหมู่อย่างชัดเจน</li>
+        <li>รายการ (<code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code>) แสดงอันดับเกมและรายละเอียดต่าง ๆ</li>
+        <li>ลิงก์ (<code>&lt;a&gt;</code>) เชื่อมไปยังหน้าข้อมูลเพิ่มเติมของแต่ละเกม</li>
+        <li><code>&lt;footer&gt;</code> สำหรับข้อมูลปิดท้ายหน้าเว็บ</li>
+      </ul>
+
+      <h3>เรื่อง Client / Server</h3>
+      <p>
+        <strong>ยังไม่เกิด client-server</strong>        
+        เพราะ เมื่อลองเปิดไฟล์ <code>index.html</code> เบราว์เซอร์จะเปิดไฟล์ผ่านโปรโตคอล <code>file://</code> 
+        ซึ่งเป็นการอ่านไฟล์จากดิสก์ในเครื่องโดยตรง ไม่ได้ส่ง request ผ่าน network ไปหา web server 
+        เพราะไม่มีเครื่อง server ที่คอยรับ request และ response อยู่คนละเครื่องหรือคนละ process กับผู้ใช้
+        เบราว์เซอร์ในเครื่องทำหน้าที่เป็นทั้งผู้ขอไฟล์และผู้แสดงผลในเวลาเดียวกัน
+      </p>
+    </section>
+
+    <!-- ===================== How I Built It ===================== -->
+    <section id="how">
+      <h2>How I Built It</h2>
+      <p>
+        พัฒนาเว็บไซต์นี้โดยเรียนรู้จากอาจารย์ในมหาวิทยาลัย ร่วมกับคลิปสอนฟรีบนยูทูป
+      </p>
+      <h3>ขั้นตอนสำคัญ</h3>
+      <ol class="tech-list">
+        <li>ดูคลิปสอนฟรีเพื่อทำความเข้าใจโครงสร้าง HTML และหลักการเขียน CSS เบื้องต้น</li>
+        <li>ฝึกทำตามไฟล์แบบฝึกหัดที่อาจารย์แปะไว้ให้ </li>
+        <li>ร่างโครงหน้าเว็บ เขียนเนื้อหา แล้วค่อย ๆ ใส่ style ทีละส่วน</li>
+        <li>ใช้ AI เป็นเหมือนโค้ชคอยช่วยตรวจสอบโค้ด ชี้จุดผิดพลาดเล็ก ๆ น้อย ๆ และอธิบายคำสั่งที่ยังไม่เข้าใจ</li>
+      </ol>
+    </section>
+
+    <!-- ===================== Top 5 Games ===================== -->
+    <section id="games">
+      <h2>5 เกมที่สร้างรายได้สูงสุดในปี 2025</h2>
+      <p>ข้อมูลอันดับโดยประมาณ อ้างอิงจากรายงานยอดขายเกมทั่วโลกและในสหรัฐฯ ปี 2025</p>
+
+      <ol class="game-list">
+        <li class="game-card">
+          <span class="rank">1</span>
+          <img src="media/1.jpeg" alt="ไอคอนเกม Battlefield 6">
+          <h3>Battlefield 6</h3>
+          <p class="revenue">รายได้สูงสุดของปี 2025</p>
+          <a href="https://www.ea.com/games/battlefield/battlefield-6" target="_blank" rel="noopener">ดูข้อมูลเพิ่มเติม</a>
+        </li>
+
+        <li class="game-card">
+          <span class="rank">2</span>
+          <img src="media/2.jpeg" alt="ไอคอนเกม NBA 2K26">
+          <h3>NBA 2K26</h3>
+          <p class="revenue">ยอดขายติดอันดับต้นปี 2025</p>
+          <a href="https://nba.2k.com/2k26/" target="_blank" rel="noopener">ดูข้อมูลเพิ่มเติม</a>
+        </li>
+
+        <li class="game-card">
+          <span class="rank">3</span>
+          <img src="media/3.jpeg" alt="ไอคอนเกม Ghost of Yotei">
+          <h3>Ghost of Yotei</h3>
+          <p class="revenue">หนึ่งในเกมขายดีที่สุดบน PlayStation</p>
+          <a href="https://www.playstation.com/en-us/games/ghost-of-yotei/" target="_blank" rel="noopener">ดูข้อมูลเพิ่มเติม</a>
+        </li>
+
+        <li class="game-card">
+          <span class="rank">4</span>
+          <img src="media/4.jpeg" alt="ไอคอนเกม Monster Hunter Wilds">
+          <h3>Monster Hunter Wilds</h3>
+          <p class="revenue">ยอดขายกว่า 6 ล้านชุดบน PC</p>
+          <a href="https://www.monsterhunter.com/wilds/en-us/" target="_blank" rel="noopener">ดูข้อมูลเพิ่มเติม</a>
+        </li>
+
+        <li class="game-card">
+          <span class="rank">5</span>
+          <img src="media/5.jpeg" alt="ไอคอนเกม Borderlands 4">
+          <h3>Borderlands 4</h3>
+          <p class="revenue">ติดอันดับเกม PC ขายดีของปี</p>
+          <a href="https://borderlands.2k.com/" target="_blank" rel="noopener">ดูข้อมูลเพิ่มเติม</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== Reflection ===================== -->
+    <section id="reflection">
+      <h2>Reflection</h2>
+
+      <div class="reflection-item">
+        <h3>ปัญหาหรือความท้าทายที่พบ</h3>
+        <p>
+          ลืมคำสั่งบางคำสั่งว่าทำงานยังไงหรือเขียนยังไง ทำให้ได้ผลลัพธ์ไม่ตรงตามที่ต้องการ
+          แก้ปัญหาโดย กลับไปทบทวนและค้นหาข้อมูลเพิ่มเติมจาก Google และ AI
+        </p>
+      </div>
+
+      <div class="reflection-item">
+        <h3>สิ่งที่เข้าใจมากขึ้นเกี่ยวกับการพัฒนาเว็บไซต์</h3>
+        <p>
+          ทำให้คุ้นเคยกับเครื่องมือและคำสั่งต่าง ๆ มากขึ้น
+          และเข้าใจการทำงานของโค้ดได้ดีขึ้น ทั้งเรื่องโครงสร้างของ HTML และการจัดรูปแบบด้วย CSS
+        </p>
+      </div>
+
+      <div class="reflection-item">
+        <h3>สิ่งที่อยากปรับปรุงหากพัฒนาต่อ</h3>
+        <p>
+          หากได้พัฒนาเว็บไซต์นี้ต่อ อยากเพิ่มลูกเล่น สีสัน และ animation ขยับได้มากขึ้น
+          เพราะอยากให้เว็บไซต์มีความน่าสนใจ และทำให้ผู้ใช้พึงพอใจมากขึ้น
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 จิรภาส เขียวเจริญ | รหัสนักศึกษา 6909650357</p>
+    <p>Assignment 1: My First Learning Portfolio</p>
+  </footer>
+
+</body>
+</html>
