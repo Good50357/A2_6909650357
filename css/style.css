@@ -34,18 +34,10 @@ nav {
 }
 
 /* ---------- Main layout ---------- */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px 20px;
-}
-
 section {
   background-color: #ffffff;
   border: 1px solid #f1d6d9;
   border-radius: 10px;
-  padding: 25px 30px;
-  margin-bottom: 30px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
